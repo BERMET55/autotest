@@ -29,6 +29,9 @@ class ClientPage {
   get ageSelect()  { return $('app-client-age-filter div.age')}
   get genderSelect() { return $('app-client-sex-filter[class="options-wrap sex active"]')}
   get registerForm() { return $('app-client-registration-channel-filter')}
+  get restaurantSelect() { return $('div[class="options-select orders"]')}
+  get loyaltylevel() { return $('div[class="options-select orders counter-shown"]')}
+  get CheckLevel() { return $('div[class="options-select ac"]')}
     
   get ageAllOption() { return $('div[class="option age all select"]')}
   get age18o23Option() { return $('div[ class="option age identified"]')}
@@ -45,17 +48,29 @@ class ClientPage {
 
   get registerAllOption() { return $('div[class="option gender select"]')}
   get registerCRMOption() { return $('div[class="option gender ng-star-inserted"]')}
-  get registeriOSOption() { return $('div[class="option gender ng-star-inserted select"]')
-//   get registerAnddOption() { return $('div[class="option gender ng-star-inserted select"]')}
-//   get registerRWOption() { return $('div[class="option gender ng-star-inserted"]')}
-//   get registerRXOption() { return $('div[class="option gender ng-star-inserted select"]')}
-//   get registerWebOption() { return $('div[class="option gender ng-star-inserted"]')}
+  get registerIOption() {return $('div[class="option gender ng-star-inserted select"]')}
+  get registerAnddOption() { return $('div[class="option gender ng-star-inserted select"]')}
+  get registerRWOption() { return $('div[class="option gender ng-star-inserted"]')}
+  get registerRXOption() { return $('div[class="option gender ng-star-inserted select"]')}
+  get registerWebOption() { return $('div[class="option gender ng-star-inserted"]')}
 
+  get restaurantSelect1() { return $('mat-checkbox[class="checkbox custom mat-checkbox mat-accent ng-star-inserted"]')}
+  get restaurantSelect2() { return $('mat-checkbox[class="checkbox custom mat-checkbox mat-accent ng-star-inserted"]')}
+  get restaurantSelect3() { return $('mat-checkbox[class="checkbox custom mat-checkbox mat-accent ng-star-inserted"]')}
+  get restaurantSelect4() { return $('mat-checkbox[class="checkbox custom mat-checkbox mat-accent ng-star-inserted"]')}
+  get restaurantSelect5() { return $('mat-checkbox[class="checkbox custom mat-checkbox mat-accent ng-star-inserted"]')}
 
+  get loyaltyBronze() { return $('mat-checkbox[class="option checkbox custom mat-checkbox mat-accent ng-star-inserted mat-checkbox-anim-checked-unchecked"]')}
+  
 
-
-
-//    async fillForm(testingUser){
+  get Check1Option() { return $('div[class="option ac all select"]')}
+  get Check2Option() { return $('div[class="option ac identified select"]')}
+  get Check3Option() { return $('div[class="option ac identified"]')}
+  get Check4Option() { return $('div[class="option ac identified"]')}
+  get Check5Option() { return $('div[class="option ac identified select"]')}
+  get Check6Option() { return $('div[class="option ac maximum"]')}
+  get Check6Option() { return $('div[class="option ac range-double"]')}
+  //    async fillForm(testingUser){
 //           await this.surnameField.setValue(testingUser.surname)
 //       }
      
@@ -72,7 +87,6 @@ class ClientPage {
 
 //  async open(){
 //       await browser.url(browser.options.baseUrl + 'clients');
- }
  }
 
 module.exports = new ClientPage()
